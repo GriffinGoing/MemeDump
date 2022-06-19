@@ -4,10 +4,10 @@
     "slug": "MemeDump",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/memeDumpIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/loginBG.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,16 +18,34 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.goinggr.memedump",
+      "buildNumber": "1.0.1",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
     "android": {
+      "package": "com.goinggr.memedump",
+	    "versionCode": 1,
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyCp6hvC42kBptlsDXxKe4x6Ch83ITjhL7Y",
+          "authDomain": "memedump-8b231.firebaseapp.com",
+          "databaseURL": "https://memedump-8b231-default-rtdb.firebaseio.com",
+          "projectId": "memedump-8b231",
+          "storageBucket": "memedump-8b231.appspot.com",
+          "messagingSenderId": "510786434788",
+          "appId": "1:510786434788:web:767d8a1bf346227db89ef1",
+          "measurementId": "G-V3RFN58TVR"
+        }
+      }
     }
   }
 }
